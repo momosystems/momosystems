@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: #121212;
+    color: white;
+    font-size: 30px;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro p {
+    font-size: 25px;
+    opacity: 0.7;
+}
+
+#game {
+    display: none;
+    position: relative;
+    text-align: center;
+}
+
+#number {
+    display: none;
+    color: red;
+    font-size: 300px;
+    position: absolute;
+}
+
+#plus {
+    position: absolute;
+    font-size: 600px;
+}
+
+#evaluation {
+    display: none;
+}
+
+#evaluation h1 {
+    margin: 10px 0px;
+}
+
+#evaluation h1:nth-of-type(2) {
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+
+#times,
+#average {
+    color: red;
+}
+
+#average {
+    font-size: 250px;
+}
+
+#times {
+    width: 400px;
+    text-align: center;
+}
+
+#info {
+    opacity: 0.5;
+    font-size: 20px;
+}

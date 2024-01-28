@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 20px;
+}
+
+.linksExplor {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.linksExplor:hover {
+    text-decoration: underline;
+}

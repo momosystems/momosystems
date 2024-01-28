@@ -1,0 +1,31 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 20px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+p {
+    font-family: Arial;
+}
+
+.mdl-mega-footer {
+    background: rgb(53, 52, 52);
+}
+
+.linksExplor {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.linksExplor:hover {
+    text-decoration: underline;
+}

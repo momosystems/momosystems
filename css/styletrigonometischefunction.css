@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: orange;
+}
+
+main {
+    width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+#canvasContainer {
+    position: relative;
+    min-height: 400px;
+}
+
+canvas {
+    position: absolute;
+}
+
+#controls {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 25px;
+    z-index: 1;
+}
+
+#controls i {
+    cursor: pointer;
+    opacity: 0.2;
+    margin: 0px 5px;
+    transition: opacity 100ms;
+}
+
+#controls i:hover {
+    opacity: 1;
+}
+
+#slowerBtn {
+    transform: scaleX(-1);
+}
+
+#functionContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.fnBtn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+    color: inherit;
+    font-size: 40px;
+    padding: 10px 15px;
+    margin: 0px 30px 50px 30px;
+    background-color: transparent;
+    letter-spacing: 2px;
+    opacity: 0.2;
+    transition: opacity 100ms;
+}
+
+.fnBtn:hover {
+    opacity: 1;
+}
+
+.active {
+    opacity: 1 !important;
+}

@@ -1,0 +1,89 @@
+footer {
+    box-sizing: border-box;
+    background: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer {
+    color: #fff;
+    background: #121315;
+    text-align: center;
+}
+
+footer p {
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-container {
+    max-width: 1200px;
+    
+}
+
+.brand {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+    transition: 0.3s;
+}
+
+.brand:hover {
+    color: #ff2b00
+}
+
+.media-icons-footer li {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icons-footer a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media-icons-footer a:hover {
+    background: #fff;
+    color: #111;
+}
+
+footer .menu-footer a {
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+footer .menu-footer a:hover {
+    color: #ff2b00
+}
+
+footer .menu-footer li {
+    display: inline-block;
+    margin: 0.7em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+footer .media-icons-footer {
+    margin: 1.5em 0;
+}

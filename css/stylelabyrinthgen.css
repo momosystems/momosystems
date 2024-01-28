@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #eee;
+}
+
+/* menu */
+
+menu {
+    width: 800px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    background-color: #444;
+    padding: 5px;
+    border-radius: 3px;
+    transition: all 120ms linear;
+}
+
+select:hover,
+button:hover,
+select:focus,
+button:focus {
+    background-color: #666;
+}
+
+button:disabled,
+select:disabled {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}
+
+/* individual input styles */
+
+#startBtn {
+    padding: 5px 12px;
+    cursor: pointer;
+}
+
+#delayInput {
+    width: 70px;
+}
+
+#sizeInput {
+    width: 65px;
+}
+
+canvas {
+    border: 1px solid #eee;
+}

@@ -1,0 +1,156 @@
+
+:root {
+    --main-color: teal;
+    --main-light-color: rgb(3, 173, 173);
+    --cell-size: min(45px, 8vw);
+    --cell-font-size: calc((0.9) * var(--cell-size));
+    --cell-border-color: #bbb;
+    --block-border-color: #666;
+    --fixed-color: rgb(245, 205, 205);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #222;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline: none;
+    border: none;
+    background: inherit;
+    color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+header.susolver-header {
+    padding: 50px 10px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    color: var(--main-color);
+    line-height: 0.9;
+}
+
+main {
+    padding: 0px 10px;
+    text-align: center;
+}
+
+#controls {
+    margin-bottom: 25px;
+}
+
+#controls button {
+    padding: 6px 12px;
+    background: linear-gradient(var(--main-color), var(--main-light-color));
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+    transition: color 150ms linear;
+}
+
+button:disabled {
+    color: #fff6;
+}
+
+button:hover,
+button:focus {
+    opacity: 0.8;
+}
+
+#solveBtn {
+    width: 75px;
+}
+
+#info {
+    margin: 20px 0px;
+    color: var(--main-color);
+    user-select: none;
+}
+
+#sudoku {
+    margin: 0 auto;
+    --spacing: 20px;
+    --size: calc(var(--spacing) + 9 * var(--cell-size));
+    width: var(--size);
+    height: var(--size);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--block-border-color);
+    gap: 2px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: var(--cell-font-size);
+    font-weight: bold;
+    transition: opacity 500ms linear;
+}
+
+#sudoku.solving {
+    opacity: 0.6;
+}
+
+.block {
+    --spacing: 4px;
+    --size: calc(var(--spacing) + 3 * var(--cell-size));
+    width: var(--size);
+    height: var(--size);
+    background: var(--cell-border-color);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1px;
+}
+
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background: white;
+    text-align: center;
+}
+
+.cell:focus {
+    background: var(--cell-border-color);
+}
+
+.cell.fixed {
+    background: var(--fixed-color);
+}
+
+.mdl-mega-footer {
+    background: rgb(53, 52, 52);
+}
+
+.linksExplor {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.linksExplor:hover {
+    text-decoration: underline;
+}
