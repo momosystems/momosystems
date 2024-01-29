@@ -2,7 +2,7 @@
 
 <p align="center"><img src="https://momosystems.netlify.app/img/logomomosystems.png" alt="project-image"></p>
 
-<p id="description">Auf dieser Website werden viele Features welche man häufig im Alltag benötigt auf eine übersichtliche Art und Weise dargestellt und für den Benutzer leicht zugänglich gemacht. Auf dieser Seite sind viele Funktionen selbst programmiert, manche wurden jedoch auch aus YouTube Tutorials nach programmiert oder durch andere Projekte inspiriert</p>
+<p id="description">Auf dieser Website werden viele Features welche man häufig im Alltag benötigt auf eine übersichtliche Art und Weise dargestellt und für den Benutzer leicht zugänglich gemacht. Auf dieser Seite sind viele Funktionen selbst programmiert, manche wurden jedoch auch aus YouTube Tutorials nach programmiert oder durch andere Projekte inspiriert.</p>
 
 <h2>🚀 Demo</h2>
 
