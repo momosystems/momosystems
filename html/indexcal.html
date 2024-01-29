@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <script src="https://cloud.ccm19.de/app.js?apiKey=246c7f059831f54e6232713a100cde47992175de9e239c02&amp;domain=65030b814300fdf436031652" referrerpolicy="origin"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Der Kalender von Momo Systems" />
+    <title>Momo Kalender (IT-Systeme von Momo Systems im Internet)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/stylecal.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
+  </head>
+  <body>
+    <main>
+    <header id="header">
+      <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
+      <div class="">
+          <ul id="navbar">
+              <li><a href="../index.html">Start</a></li>
+              <li><a href="indexschreib.html" class="active">Schreibtisch</a></li>
+              <li><a href="indexsonst.html">Sonstiges</a></li>
+              <li><a href="indexspiele.html">Spiele</a></li>
+              <li><a href="../shop.html">Shop</a></li>
+              <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
+          </ul>
+      </div>
+      <div id="mobile">
+          <i id="bar" class="fas fa-outdent"></i>    
+      </div>
+    </header>
+      <header class="header">
+        <div class="weekControls">
+          <i id="prevWeekBtn" class="fas fa-angle-double-left"></i>
+          <span id="weekDisplay">
+            <span id="weekStartDisplay"></span> ‒
+            <span id="weekEndDisplay"></span>
+          </span>
+          <i id="nextWeekBtn" class="fas fa-angle-double-right"></i>
+        </div>
+        <h1>Kalender</h1>
+        <div class="generalControls">
+          <i id="addButton" class="fas fa-plus"></i>
+          <i id="trashButton" class="fas fa-trash-alt"></i>
+          <i id="dark_mode_button" class="fas fa-cloud"></i>
+        </div>
+      </header>
+
+      <section id="calendar">
+        <div class="dayTime"></div>
+        <div data-name="Montag" data-dayIndex="0" class="day"></div>
+        <div data-name="Dienstag" data-dayIndex="1" class="day"></div>
+        <div data-name="Mittwoch" data-dayIndex="2" class="day"></div>
+        <div data-name="Donnerstag" data-dayIndex="3" class="day"></div>
+        <div data-name="Freitag" data-dayIndex="4" class="day"></div>
+        <div data-name="Samstag" data-dayIndex="5" class="day"></div>
+        <div data-name="Sonntag" data-dayIndex="6" class="day"></div>
+      </section>
+
+      <form id="eventModal">
+        <h2 id="modalTitle"></h2>
+        <label for="title" class="descriptor">Titel</label>
+        <div>
+          <input
+            type="text"
+            id="eventTitle"
+            name="title"
+            required
+            class="shortInput"
+          />
+        </div>
+        <label for="date" class="descriptor">Datum</label>
+        <div>
+          <input
+            type="date"
+            id="eventDate"
+            name="date"
+            required
+            class="shortInput"
+          />
+        </div>
+        <label for="time" class="descriptor">Zeit</label>
+        <div>
+          <input
+            type="time"
+            id="eventStart"
+            name="time"
+            required
+            class="shortInput"
+          />
+          -
+          <input
+            type="time"
+            id="eventEnd"
+            name="time"
+            required
+            class="shortInput"
+          />
+        </div>
+        <label for="description" class="descriptor">Beschreibung</label>
+        <div>
+          <textarea name="description" id="eventDescription"></textarea>
+        </div>
+        <label for="colors" class="descriptor">Farben</label>
+        <div id="colors">
+          <input
+            type="button"
+            name="color"
+            class="color color-red"
+            data-color="red"
+          />
+          <input
+            type="button"
+            name="color"
+            class="color color-blue"
+            data-color="blue"
+          />
+          <input
+            type="button"
+            name="color"
+            class="color color-green"
+            data-color="green"
+          />
+          <input
+            type="button"
+            name="color"
+            class="color color-orange"
+            data-color="orange"
+          />
+          <input
+            type="button"
+            name="color"
+            class="color color-pink"
+            data-color="pink"
+          />
+        </div>
+        <div id="eventControls">
+          <input
+            type="submit"
+            id="submitButton"
+            value="Bestätigen"
+            class="button"
+          />
+          <input
+            type="button"
+            id="cancelButton"
+            value="Abbrechen"
+            class="button"
+          />
+          <input type="button" id="copyButton" value="Copy" class="button" />
+          <input
+            type="button"
+            id="deleteButton"
+            value="Löschen"
+            class="button"
+          />
+        </div>
+        <div id="errors"></div>
+      </form>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <br>
+        <a href="../index.html" class="brand">Momo Systems</a>
+        <ul class="menu-footer">
+          <li>
+            <a href="indexschreib.html">Schreibtisch</a>
+          </li>
+          <li>
+            <a href="indexsonst.html">Sonstiges</a>
+          </li>
+          <li>
+            <a href="indexspiele.html">Spiele</a>
+          </li>
+          <li>
+            <a href="javascript:void(
+              window.open(
+                'https://form.jotform.com/221733737628058',
+                'blank',
+                'scrollbars=yes,
+                toolbar=no,
+                width=700,
+                height=500'
+              )
+            )
+          ">Bewerbung</a>
+          </li>
+          <li>
+            <a href="https://motuna.netlify.app/">Motuna</a>
+          </li>
+          <li>
+            <a href="https://momofit.netlify.app/">Momofit</a>
+          </li>
+        </ul>
+        <ul class="media-icons-footer">
+          <li>
+            <a href="https://www.youtube.com/channel/UC_ZXm54DtHH-qXspoCN4kEw">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Momo_Pro03">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/momopro_cool/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@m0m0pro">
+              <i class="fab fa-tiktok"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.twitch.tv/m0m0pro">
+              <i class="fab fa-twitch"></i>
+            </a>
+          </li>
+        </ul>
+        <p>
+          Ein kostenloser online Service mit vielen nützlichen Features. Vielen Dank, dass du auf unsere Website gefunden hast. Nun wünschen wir dir viel Spaß beim umsehen und erkunden!
+        </p>
+        <p><a href="impressum.html">Impressum</a> |  <a href="datenschutz.html">Datenschutz</a></p>
+        <br>
+      </div>  
+    </footer>
+
+    <script src="../js/header.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="../js/indexcal.js"></script>
+    <script type="text/javascript" src="../js/darkmode.js" defer></script>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script
+      src="https://form.jotform.com/static/feedback2.js"
+      type="text/javascript"
+    >
+      new JotformFeedback({
+        formId: "221733642732352",
+        buttonText: "Feedback",
+        base: "https://form.jotform.com/",
+        background: "#4a90e2",
+        fontColor: "#FFFFFF",
+        buttonSide: "left",
+        buttonAlign: "center",
+        type: false,
+        width: 700,
+        height: 500,
+        isCardForm: false
+      });
+    </script>
+  </body>
+</html>

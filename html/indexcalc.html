@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script src="https://cloud.ccm19.de/app.js?apiKey=246c7f059831f54e6232713a100cde47992175de9e239c02&amp;domain=65030b814300fdf436031652" referrerpolicy="origin"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschenrechner</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/stylecalc.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="logomomosystems/png" href="../Img/logomomosystems.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+</head>
+
+<body>
+    <section class="connection">
+        <div class="popup-connection">
+              <div class="icon-connection"><i class=""></i></div>
+              <div class="details-connection">
+                <h2 class="title-connection"></h2>
+                <p class="desc-connection"></p>
+                <button class="reconnect-connection">Neuverbinden</button>
+            </div>
+          </div>
+    </section>
+    <header id="header">
+      <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
+      <div class="">
+          <ul id="navbar">
+              <li><a href="../index.html">Start</a></li>
+              <li><a href="indexschreib.html" class="active">Schreibtisch</a></li>
+              <li><a href="indexsonst.html">Sonstiges</a></li>
+              <li><a href="indexspiele.html">Spiele</a></li>
+              <li><a href="../shop.html">Shop</a></li>
+              <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
+          </ul>
+      </div>
+      <div id="mobile">
+          <i id="bar" class="fas fa-outdent"></i>    
+      </div>
+    </header>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" placeholder="Ergebnis" name="display" readonly>
+                </div>
+                <div>
+                    <input class="operator" type="button" value="AC" onclick="display.value = ''">
+                    <input class="operator" type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1)">
+                    <input class="operator" type="button" value="." onclick="display.value += '.'">
+                    <input class="operator" type="button" value="/" onclick="display.value += '/'">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7'">
+                    <input type="button" value="8" onclick="display.value += '8'">
+                    <input type="button" value="9" onclick="display.value += '9'">
+                    <input class="operator" type="button" value="*" onclick="display.value += '*'">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4'">
+                    <input type="button" value="5" onclick="display.value += '5'">
+                    <input type="button" value="6" onclick="display.value += '6'">
+                    <input class="operator" type="button" value="-" onclick="display.value += '-'">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1'">
+                    <input type="button" value="2" onclick="display.value += '2'">
+                    <input type="button" value="3" onclick="display.value += '3'">
+                    <input class="operator" type="button" value="+" onclick="display.value += '+'">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="display.value += '00'">
+                    <input type="button" value="0" onclick="display.value += '0'">
+                    <input class="equal operator" type="button" value="=" onclick="display.value = eval(display.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+          <br>
+          <a href="../index.html" class="brand">Momo Systems</a>
+          <ul class="menu-footer">
+            <li>
+              <a href="indexschreib.html">Schreibtisch</a>
+            </li>
+            <li>
+              <a href="indexsonst.html">Sonstiges</a>
+            </li>
+            <li>
+              <a href="indexspiele.html">Spiele</a>
+            </li>
+            <li>
+              <a href="javascript:void(
+                window.open(
+                  'https://form.jotform.com/221733737628058',
+                  'blank',
+                  'scrollbars=yes,
+                  toolbar=no,
+                  width=700,
+                  height=500'
+                )
+              )
+            ">Bewerbung</a>
+            </li>
+            <li>
+              <a href="https://motuna.netlify.app/">Motuna</a>
+            </li>
+            <li>
+              <a href="https://momofit.netlify.app/">Momofit</a>
+            </li>
+          </ul>
+          <ul class="media-icons-footer">
+            <li>
+              <a href="https://www.youtube.com/channel/UC_ZXm54DtHH-qXspoCN4kEw">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Momo_Pro03">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/momopro_cool/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@m0m0pro">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitch.tv/m0m0pro">
+                <i class="fab fa-twitch"></i>
+              </a>
+            </li>
+          </ul>
+          <p>
+            Ein kostenloser online Service mit vielen nützlichen Features. Vielen Dank, dass du auf unsere Website gefunden hast. Nun wünschen wir dir viel Spaß beim umsehen und erkunden!
+          </p>
+          <p><a href="impressum.html">Impressum</a> |  <a href="datenschutz.html">Datenschutz</a></p>
+          <br>
+        </div>  
+      </footer>
+  
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+            <script
+        src="https://form.jotform.com/static/feedback2.js"
+        type="text/javascript"
+      >
+        new JotformFeedback({
+          formId: "221733642732352",
+          buttonText: "Feedback",
+          base: "https://form.jotform.com/",
+          background: "#4a90e2",
+          fontColor: "#FFFFFF",
+          buttonSide: "left",
+          buttonAlign: "center",
+          type: false,
+          width: 700,
+          height: 500,
+          isCardForm: false
+        });
+      </script>
+  </body>
+<script src="../js/header.js"></script>
+</html>

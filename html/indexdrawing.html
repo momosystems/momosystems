@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <script src="https://cloud.ccm19.de/app.js?apiKey=246c7f059831f54e6232713a100cde47992175de9e239c02&amp;domain=65030b814300fdf436031652" referrerpolicy="origin"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/styledrawing.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+</head>
+<body>
+  <header id="header">
+    <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
+    <div class="">
+        <ul id="navbar">
+            <li><a href="../index.html">Start</a></li>
+            <li><a href="indexschreib.html" >Schreibtisch</a></li>
+            <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
+            <li><a href="indexspiele.html">Spiele</a></li>
+            <li><a href="../shop.html">Shop</a></li>
+            <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>    
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <section class="tools-board">
+        <div class="row">
+          <label class="title">Shapes</label>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="../img/rectangle.svg" alt="">
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="../img/circle.svg" alt="">
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="../img/triangle.svg" alt="">
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <label class="title">Options</label>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="../img/brush.svg" alt="">
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="../img/eraser.svg" alt="">
+              <span>Eraser</span>
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider" min="1" max="30" value="5">
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <label class="title">Colors</label>
+          <ul class="options">
+            <li class="option"></li>
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input type="color" id="color-picker" value="#4A98F7">
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear-canvas">Clear Canvas</button>
+          <button class="save-img">Save As Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <br>
+      <a href="../index.html" class="brand">Momo Systems</a>
+      <ul class="menu-footer">
+        <li>
+          <a href="indexschreib.html">Schreibtisch</a>
+        </li>
+        <li>
+          <a href="indexsonst.html">Sonstiges</a>
+        </li>
+        <li>
+          <a href="indexspiele.html">Spiele</a>
+        </li>
+        <li>
+          <a href="javascript:void(
+            window.open(
+              'https://form.jotform.com/221733737628058',
+              'blank',
+              'scrollbars=yes,
+              toolbar=no,
+              width=700,
+              height=500'
+            )
+          )
+        ">Bewerbung</a>
+        </li>
+        <li>
+          <a href="https://motuna.netlify.app/">Motuna</a>
+        </li>
+        <li>
+          <a href="https://momofit.netlify.app/">Momofit</a>
+        </li>
+      </ul>
+      <ul class="media-icons-footer">
+        <li>
+          <a href="https://www.youtube.com/channel/UC_ZXm54DtHH-qXspoCN4kEw">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/Momo_Pro03">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/momopro_cool/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@m0m0pro">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitch.tv/m0m0pro">
+            <i class="fab fa-twitch"></i>
+          </a>
+        </li>
+      </ul>
+      <p>
+        Ein kostenloser online Servic mit vielen nützlichen Features. Vielen Dank, dass du auf unsere Website gefunden hast. Nun wünschen wir dir viel Spaß beim umsehen und erkunden!
+      </p>
+      <p><a href="impressum.html">Impressum</a> |  <a href="datenschutz.html">Datenschutz</a></p>
+      <br>
+    </div>  
+  </footer>
+  <script
+  src="https://form.jotform.com/static/feedback2.js"
+  type="text/javascript"
+>
+  new JotformFeedback({
+    formId: "221733642732352",
+    buttonText: "Feedback",
+    base: "https://form.jotform.com/",
+    background: "#4a90e2",
+    fontColor: "#FFFFFF",
+    buttonSide: "left",
+    buttonAlign: "center",
+    type: false,
+    width: 700,
+    height: 500,
+    isCardForm: false
+  });
+</script>
+    <script src="../js/header.js"></script>
+    <script src="../js/indexdrawing.js" defer></script>
+</body>
+</html>
