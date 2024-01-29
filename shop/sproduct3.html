@@ -1,0 +1,234 @@
+<!-- Beginning of the Code-->
+<!-- We, Momo Systems own the rights to this code, so it is forbidden to copy the code or claim ownership of it. Legal action will be taken in case of non-compliance. -->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momo Systems Shop</title>
+    <link rel="icon" type="logomomosystems/png" href="./img/logomomosystems.png" />
+    <link rel="stylesheet" href="./css/shop.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+</head>
+<body>
+
+    <section id="header">
+        <a href="../index.html"><img src="./logo/logo_header_shop.png" class="" alt=""></a>
+        <div class="">
+            <ul id="navbar">
+                <li><a href="../shop.html">Start</a></li>
+                <li><a href="products.html" class="active">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Über</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+                <a href="#" id="close"><img src="./icons/x.png" alt="X" height="40px" width="40px"></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+            
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="./products/f3.jpg" width="100%" id="MainImg">
+        
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="./products/f3.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./products/f3.1.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./products/f3.2.jpg" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="./products/f3.3.jpg" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / Minecraft</h6>
+            <h4>Minecraft Plugin Einrichten</h4>
+            <h2><span id="price">Zeile: €0.1</span></h2>
+            <input type="number" value="1" min="1" max="99" id="anzahl">
+            <button class="normal" onclick="
+                const anzahl = document.getElementById('anzahl').value; 
+                navigator.clipboard.writeText('minecraft_plugin_furnish' + '_' + anzahl + '_momosystems_econemy_code')
+                window.location.href='#popup1'
+            ">MSE-Code kopieren</button>
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <h2>Code Kopiert</h2>
+                    <a class="close" href="#">&times;</a>
+                    <div class="content">
+                        Dein MSE-Code wurde erfolgreich in deine Zwischenablage kopiert.
+                    </div>
+                </div>
+            </div>
+            <p><i>Sende den MSE-Code in deiner Email mit deiner Bestell Anfrage mit.</i></p>
+            <h4>Produkt Details</h4>
+            <span> Du hast dir ein Minecraft Plugin heruntergeladen möchtest / kannst es aber nicht selber einrichten? Wir richten dir das Plugin professionell und nach deinen Wünschen ein! <br>Sende dafür einfach eine E-Mail an momo.itsystems@gmail.com mit deinem MSE-Code</span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Beliebte Produkte</h2>
+        <p>Diese Produkte könnten dir auch gefallen</p>
+        <div class="pro-container">
+            <div class="pro" onclick="window.location.href='sproduct9.html'">
+                <div class="product-foto">
+                    <img src="./products/n1.jpg" alt="">
+                </div>
+                <div class="des">
+                    <span>medien design</span>
+                    <h5>QR Code</h5>
+                    <div class="star">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                    </div>
+                    <h4>€7</h4>
+                </div>
+                <a href="#"><img src="./icons/info.png" alt="Info" class="cart"></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct10.html'">
+                <div class="product-foto">
+                    <img src="./products/n2.jpg" alt="">
+                </div>
+                <div class="des">
+                    <span>development</span>
+                    <h5>Google Form erstellen</h5>
+                    <div class="star">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                    </div>
+                    <h4>€15</h4>
+                </div>
+                <a href="#"><img src="./icons/info.png" alt="Info" class="cart"></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct11.html'">
+                <div class="product-foto">
+                    <img src="./products/n3.jpg" alt="">
+                </div>
+                <div class="des">
+                    <span>development</span>
+                    <h5>Google Account erstellen</h5>
+                    <div class="star">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                    </div>
+                    <h4>€10</h4>
+                </div>
+                <a href="#"><img src="./icons/info.png" alt="Info" class="cart"></a>
+            </div>
+            <div class="pro" onclick="window.location.href='sproduct12.html'">
+                <div class="product-foto">
+                    <img src="./products/n4.jpg" alt="">
+                </div>
+                <div class="des">
+                    <span>development</span>
+                    <h5>Scratch Projekt erstellen</h5>
+                    <div class="star">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                        <img src="./icons/star.png" alt="Star" height="20px" width="20px">
+                    </div>
+                    <h4>€30</h4>
+                </div>
+                <a href="#"><img src="./icons/info.png" alt="Info" class="cart"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Registation für einen Newsletter</h4>
+            <p id="news-info">Bekomme Emails mit neuen <span>Infos</span> und <span>Rabattaktionen</span>.</p>
+        </div>
+        <div class="form">
+            <form action="https://formsubmit.co/momo.itsystems@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://momosystems.netlify.app">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_template" value="box">
+                <input type="hidden" name="_autoresponse" value="Vielen Dank, dass du einen Newsletter bestellt hast. Wir werden dir den nächsten Newsletter dann zusenden. Wenn du keinen Newsletter bestellt hast kannst du diese Nachricht ignorieren">
+                <input type="hidden" name="_subject" value="NEWSLETTER">
+                <input type="email" placeholder="Deine Email-Adresse " name="Email" required>
+                <button type="submit" class="normal">Registrieren</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href="../index.html"><img class="logo" src="./logo/logo-footer.png" alt="Logo"></a>
+            <h4>Kontakt</h4>
+            <p><strong>Adresse: </strong> Propst-Mayr-Str.12, 84503 Altötting</p>
+            <p><strong>Telefon: </strong> +49 174 4775542</p> 
+            <div class="follow">
+                <h4>Folge uns</h4>
+                <div class="icon">
+                    <a href="https://www.youtube.com/@momopro" target="_blank"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.twitch.tv/m0m0pro" target="_blank"><i class="fab fa-twitch"></i></a>
+                    <a href="https://www.instagram.com/momopro_cool" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/pro_momo" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.twitch.tv/m0m0pro" target="_blank"><i class="fab fa-twitch"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Über</h4>
+            <a href="about.html">Über uns</a>
+            <a href="../html/impressum.html">Impressum</a>
+            <a href="../html/datenschutz.html">Datenschutz</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>Website</h4>
+            <a href="../index.html">Startseite</a>
+            <a href="products.html">Unser Shop</a>
+            <a href="blog.html">Unser Blog</a>
+        </div>
+        <div class="col install">
+            <h4>Installiere unsere App</h4>
+            <p>Von Appstore oder Google Play</p>
+            <div class="row">
+                <a href="comingsoon.html"><img src="./pay/app.jpg" alt="App Store"></a>
+                <a href="comingsoon.html"><img src="./pay/play.jpg" alt="Play Store"></a>
+            </div>
+            <p>Sichere Zahlungsmethoden </p>
+            <img src="./pay/pay.png" alt="Pay Methods">
+        </div>
+
+        <div class="copyright">
+            <p>© 2023, Momo Systems - Momo Systems Shop</p>
+        </div>
+
+    </footer>
+
+    <script src="./js/shop.js"></script>
+</body>
+</html>
