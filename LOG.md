@@ -1,4 +1,8 @@
-# Log 29.01.2024_2 (newest)
+# Log 29.01.2024_3 (newest)
+1. Die Datei (README.md) wurde geändert
+2. Die Datei (html/indexdownl.html) wurde geändert
+
+# Log 29.01.2024_2
 1. Einige Sicherheitsfunktionen wurden hinzugefügt.
 2. Die Datei (SECURITY.md) wurde erstellt.
 3. Die MIT Lizenz wurde dem Projekt hinzugefügt
