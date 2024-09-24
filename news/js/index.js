@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! index.js");
+
 $(document).ready(function() {
     $('.filter-item').click(function() {
         const value = $(this).attr('data-filter')
