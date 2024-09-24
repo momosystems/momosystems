@@ -7,13 +7,7 @@
 <h2>🚀 Demo</h2>
 
 [momosystems.netlify.app](momosystems.netlify.app)
-
-<h2>Project Screenshots:</h2>
-
-<img src="https://i.ibb.co/P5S4Brw/Screenshot-1-Momosystems.png" alt="project-screenshot" width="1920" height="1080/">
-
-  
-  
+ 
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
