@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" dir="ltr">
+
 <head>
-  <script src="https://cloud.ccm19.de/app.js?apiKey=246c7f059831f54e6232713a100cde47992175de9e239c02&amp;domain=65030b814300fdf436031652" referrerpolicy="origin"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech (IT-Systeme von Momo Systems im Internet)</title>
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/styletts.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    />
+  <meta charset="utf-8">
+  <title>Übersetzer (IT-Systeme von Momo Systems im Internet)</title>
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/styletranslator.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font Awesome CDN Link for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body>
+  
   <header id="header">
     <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
     <div class="">
         <ul id="navbar">
             <li><a href="../index.html">Start</a></li>
-            <li><a href="indexschreib.html" >Schreibtisch</a></li>
+            <li><a href="indexschreib.html">Schreibtisch</a></li>
             <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
             <li><a href="indexspiele.html">Spiele</a></li>
             <li><a href="../shop.html">Shop</a></li>
@@ -34,24 +31,34 @@
         <i id="bar" class="fas fa-outdent"></i>    
     </div>
   </header>
-      <section>
+  <main></main>
+  <div class="container">
     <div class="wrapper">
-        <header>Text zu Sprache</header>
-        <form action="#">
-            <div class="row">
-                <label>Text eingeben</label>
-                <textarea></textarea>
-            </div>
-            <div class="row">
-                <label>Stimme auswählen</label>
-                <div class="outer">
-                <select></select>
-            </div>
-            </div>
-            <button>Konvertiere zu Sprache</button>
-        </form>
+      <div class="text-input">
+        <textarea spellcheck="false" class="from-text" placeholder="Text eingeben"></textarea>
+        <textarea spellcheck="false" readonly disabled class="to-text" placeholder="Übersetzung"></textarea>
+      </div>
+      <ul class="controls">
+        <li class="row from">
+          <div class="icons">
+            <i id="from" class="fas fa-volume-up"></i>
+            <i id="from" class="fas fa-copy"></i>
+          </div>
+          <select></select>
+        </li>
+        <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+        <li class="row to">
+          <select></select>
+          <div class="icons">
+            <i id="to" class="fas fa-volume-up"></i>
+            <i id="to" class="fas fa-copy"></i>
+          </div>
+        </li>
+      </ul>
     </div>
-</section>
+    <button>Text übersetzen</button>
+  </div>
+</main>
 <footer>
   <div class="footer-container">
     <br>
@@ -117,31 +124,15 @@
       </li>
     </ul>
     <p>
-      Ein kostenloser online Servic mit vielen nützlichen Features. Vielen Dank, dass du auf unsere Website gefunden hast. Nun wünschen wir dir viel Spaß beim umsehen und erkunden!
+      Ein kostenloser online Service mit vielen nützlichen Features. Vielen Dank, dass du auf unsere Website gefunden hast. Nun wünschen wir dir viel Spaß beim umsehen und erkunden!
     </p>
     <p><a href="impressum.html">Impressum</a> |  <a href="datenschutz.html">Datenschutz</a></p>
     <br>
   </div>  
 </footer>
-    <script src="../js/header.js"></script>
-    <script src="../js/indextts.js"></script>
-    <script
-    src="https://form.jotform.com/static/feedback2.js"
-    type="text/javascript"
-  >
-    new JotformFeedback({
-      formId: "221733642732352",
-      buttonText: "Feedback",
-      base: "https://form.jotform.com/",
-      background: "#4a90e2",
-      fontColor: "#FFFFFF",
-      buttonSide: "left",
-      buttonAlign: "center",
-      type: false,
-      width: 700,
-      height: 500,
-      isCardForm: false
-    });
-  </script>
+  <script src="../js/translatorcountries.js"></script>
+  <script src="../js/indextranslator.js"></script>
+
 </body>
+
 </html>

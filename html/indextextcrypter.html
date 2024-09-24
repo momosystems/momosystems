@@ -1,53 +1,65 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
-  <script src="https://cloud.ccm19.de/app.js?apiKey=246c7f059831f54e6232713a100cde47992175de9e239c02&amp;domain=65030b814300fdf436031652" referrerpolicy="origin"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github Profiles (IT-Systeme von Momo Systems im Internet)</title>
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/stylegithubprofiles.css">
+    <link rel="stylesheet" href="../css/styletextcrypter.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
+    <title>Text Crypter (IT-Systeme von Momo Systems im Internet)</title>
+    <link rel="icon" type="logomomosystems/png" href="../Img/logomomosystems.png" />
     <link
       rel="stylesheet"
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
     />
 </head>
+
 <body>
-  <header id="header">
-    <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
-    <div class="">
-        <ul id="navbar">
-            <li><a href="../index.html">Start</a></li>
-            <li><a href="indexschreib.html" >Schreibtisch</a></li>
-            <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
-            <li><a href="indexspiele.html">Spiele</a></li>
-            <li><a href="../shop.html">Shop</a></li>
-            <li><a href="../news.html">News</a></li>
-            <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
-        </ul>
+    <header id="header">
+        <a href="../index.html"><img src="../img/logo_header_shop.png" class="" alt=""></a>
+        <div class="">
+            <ul id="navbar">
+                <li><a href="../index.html">Start</a></li>
+                <li><a href="indexschreib.html">Schreibtisch</a></li>
+                <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
+                <li><a href="indexspiele.html">Spiele</a></li>
+                <li><a href="../shop.html">Shop</a></li>
+                <li><a href="../news.html">News</a></li>
+                <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>    
+        </div>
+      </header>
+    <main>
+    <div class="container">
+        <h1>Text Ver-/Entschlüssler</h1>
+        <label for="message">Nachricht :</label>
+        <textarea id="message" rows="5"
+            cols="50">Das könnte eine geheime Nachricht sein!</textarea>
+        <label for="key">Schlüssel :</label>
+        <input type="text" id="key" value="MomoSystems" size="50">
+        <div class="buttons">
+            <button id="enc-btn">Entschlüsseln</button>
+            <button id="dec-btn">Verschlüsseln</button>
+        </div>
+
+        <h2>Ergebnis:</h2>
+        <div id="result"></div>
+
     </div>
-    <div id="mobile">
-        <i id="bar" class="fas fa-outdent"></i>    
-    </div>
-  </header>
-    <section>
-    <form id="form">
-        <input type="text" placeholder="Suche ein Github Profil" id="search">
-    </form>
-    <main id="main">
-    </main>
-</section>
+
+</main>
 <footer>
     <div class="footer-container">
       <br>
       <a href="../index.html" class="brand">Momo Systems</a>
       <ul class="menu-footer">
         <li>
-          <a href="indexschreib">Schreibtisch</a>
+          <a href="indexschreib.html">Schreibtisch</a>
         </li>
         <li>
           <a href="indexsonst.html">Sonstiges</a>
@@ -112,25 +124,9 @@
       <br>
     </div>  
   </footer>
-  <script
-  src="https://form.jotform.com/static/feedback2.js"
-  type="text/javascript"
->
-  new JotformFeedback({
-    formId: "221733642732352",
-    buttonText: "Feedback",
-    base: "https://form.jotform.com/",
-    background: "#4a90e2",
-    fontColor: "#FFFFFF",
-    buttonSide: "left",
-    buttonAlign: "center",
-    type: false,
-    width: 700,
-    height: 500,
-    isCardForm: false
-  });
-</script>
-  <script src="../js/header.js"></script>
-    <script src="../js/indexgithubprofiles.js"></script>
+
+    <script src="../js/indextextcrypter.js"></script>
+    <script src="../js/header.js"></script>
 </body>
+
 </html>

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabatt Rechner (IT-Systeme von Momo Systems im Internet)</title>
+    <title>BMI Rechner (IT-Systeme von Momo Systems im Internet)</title>
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/stylediscountcalc.css">
+    <link rel="stylesheet" href="../css/stylebmicalc.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
     <link
@@ -22,8 +22,8 @@
     <div class="">
         <ul id="navbar">
             <li><a href="../index.html">Start</a></li>
-            <li><a href="indexschreib.html" class="active">Schreibtisch</a></li>
-            <li><a href="indexsonst.html">Sonstiges</a></li>
+            <li><a href="indexschreib.html" >Schreibtisch</a></li>
+            <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
             <li><a href="indexspiele.html">Spiele</a></li>
             <li><a href="../shop.html">Shop</a></li>
             <li><a href="../news.html">News</a></li>
@@ -35,53 +35,62 @@
     </div>
   </header>
   <main>
-    <div class="card">
-        <h1>Rabatt Rechner</h1>
-        <form action="#">
-            <div class="input-item">
-                <label for="amount"> Ursprungs Preis: </label>
-                <input type="text" id="amount">
+    <div class="container">
+        <div class="box">
+          <h1>BMI Rechner</h1>
+          <div class="content">
+
+
+            <div class="input">
+                <label for="height">Alter</label>
+                <input type="text" class="text-input" id="age" autocomplete="off" required/>
             </div>
 
-            <div class="input-item">
-                <label for="discount-percentage">Wähle Rabatt %</label>
-                <select name="percentage" id="discount-percentage">
-                    <option value="0">0</option>
-                    <option value="10">10</option>
-                    <option value="15">15</option>
-                    <option value="20">20</option>
-                    <option value="25">25</option>
-                    <option value="30">30</option>
-                    <option value="35">35</option>
-                    <option value="40">40</option>
-                    <option value="45">45</option>
-                    <option value="50">50</option>
-                    <option value="55">55</option>
-                    <option value="60">60</option>
-                    <option value="65">65</option>
-                    <option value="70">70</option>
-                    <option value="75">75</option>
-                    <option value="80">80</option>
-                    <option value="85">85</option>
-                    <option value="90">90</option>
-                    <option value="95">95</option>
-                </select>
+            <div class="gender">
+
+                <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Mann</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Frau</p>
+                      <span class="checkmark"></span>
+                    </label>
+
             </div>
 
-            <div class="input-item">
-                <label for="discount-amount"> Rabatt: </label>
-                <input type="text" id="discount-amount" disabled>
+            <div class="containerHW">
+            <div class="inputH">
+              <label for="height">Größe(cm)</label>
+              <input type="number" id="height" required>
             </div>
-            
-            <div class="input-item">
-                <label for="pay" aria-disabled="true"> Endgültiger Preis:</label>
-                <input type="text" id="pay" disabled>
-            </div> 
 
-            <button type="submit" class="calculate">Berechne</button>
-            <input type="reset" value="Zurücksetzen" class="reset">
-        </form>
-    </div>
+            <div class="inputW">
+              <label for="weight">Gewicht(kg)</label>
+              <input type="number" id="weight" required>
+            </div>
+          </div>
+
+            <button class="calculate" id="submit" onclick="calculate();">Berechne BMI</button>
+          </div>
+          <div class="result">
+            <p>Dein BMI ist</p>
+            <div id="result">00.00</div>
+            <p class="comment"></p>
+          </div>
+        </div>
+      </div>
+      
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p id="modalText"></p>
+    </div></div>
+
   </main>
           <footer>
       <div class="footer-container">
@@ -154,25 +163,25 @@
         <br>
       </div>  
     </footer>
-      <script src="../js/header.js"></script>
-      <script src="../js/indexdiscountcalc.js"></script>
-      <script
-      src="https://form.jotform.com/static/feedback2.js"
-      type="text/javascript"
-    >
-      new JotformFeedback({
-        formId: "221733642732352",
-        buttonText: "Feedback",
-        base: "https://form.jotform.com/",
-        background: "#4a90e2",
-        fontColor: "#FFFFFF",
-        buttonSide: "left",
-        buttonAlign: "center",
-        type: false,
-        width: 700,
-        height: 500,
-        isCardForm: false
-      });
-    </script>
+  <script
+  src="https://form.jotform.com/static/feedback2.js"
+  type="text/javascript"
+>
+  new JotformFeedback({
+    formId: "221733642732352",
+    buttonText: "Feedback",
+    base: "https://form.jotform.com/",
+    background: "#4a90e2",
+    fontColor: "#FFFFFF",
+    buttonSide: "left",
+    buttonAlign: "center",
+    type: false,
+    width: 700,
+    height: 500,
+    isCardForm: false
+  });
+</script>
+    <script src="../js/header.js"></script>
+    <script src="../js/indexbmicalc.js"></script>
 </body>
 </html>

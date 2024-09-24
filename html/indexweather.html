@@ -8,8 +8,9 @@
     <title>Tipp Test (IT-Systeme von Momo Systems im Internet)</title>
     <link rel="icon" type="logomomosystems/png" href="../img/logomomosystems.png" />
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/styletypingspeed.css">
+    <link rel="stylesheet" href="../css/styleweather.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link
       rel="stylesheet"
       type="text/css"
@@ -23,8 +24,8 @@
         <ul id="navbar">
             <li><a href="../index.html">Start</a></li>
             <li><a href="indexschreib.html" >Schreibtisch</a></li>
-            <li><a href="indexsonst.html">Sonstiges</a></li>
-            <li><a href="indexspiele.html" class="active">Spiele</a></li>
+            <li><a href="indexsonst.html" class="active">Sonstiges</a></li>
+            <li><a href="indexspiele.html">Spiele</a></li>
             <li><a href="../shop.html">Shop</a></li>
             <li><a href="../news.html">News</a></li>
             <a href="#" id="close"><img src="../img/x.png" alt="X" height="40px" width="40px"></a>
@@ -34,37 +35,50 @@
         <i id="bar" class="fas fa-outdent"></i>    
     </div>
   </header>
-      <section>
-    <div class="wrapper">
-        <input type="text" class="input-field">
-        <div class="content-box">
-            <div class="typing-text">
-                <p></p>
-            </div>
-            <div class="content">
-                <ul class="result-details">
-                  <li class="time">
-                    <p>Verbleibende Zeit:</p>
-                    <span><b>60</b>s</span>
-                  </li>
-                  <li class="mistake">
-                    <p>Fehler:</p>
-                    <span>0</span>
-                  </li>
-                  <li class="wpm">
-                    <p>WPM:</p>
-                    <span>0</span>
-                  </li>
-                  <li class="cpm">
-                    <p>CPM:</p>
-                    <span>0</span>
-                  </li>
-                </ul>
-                <button>Nochmal</button>
+     <main>
+        <div class="wrapper">
+            <header><i class='bx bx-left-arrow-alt'></i>Wetter App</header>
+            <section class="input-part">
+              <p class="info-txt"></p>
+              <div class="content">
+                <input type="text" spellcheck="false" placeholder="Stadt Name eingeben" required>
+                <div class="separator"></div>
+                <button>Geräte Standort</button>
               </div>
-            </div>
+            </section>
+            <section class="weather-part">
+              <img src="" alt="Weather Icon">
+              <div class="temp">
+                <span class="numb">_</span>
+                <span class="deg">°</span>C
+              </div>
+              <div class="weather">_ _</div>
+              <div class="location">
+                <i class='bx bx-map'></i>
+                <span>_, _</span>
+              </div>
+              <div class="bottom-details">
+                <div class="column feels">
+                  <i class='bx bxs-thermometer'></i>
+                  <div class="details">
+                    <div class="temp">
+                      <span class="numb-2">_</span>
+                      <span class="deg">°</span>C
+                    </div>
+                    <p> Gefühlt</p>
+                  </div>
+                </div>
+                <div class="column humidity">
+                  <i class='bx bxs-droplet-half'></i>
+                  <div class="details">
+                    <span>_</span>
+                    <p>Feuchtigkeit</p>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
-        </section>
+     </main>
         <footer>
           <div class="footer-container">
             <br>
@@ -137,8 +151,9 @@
           </div>  
         </footer>
 
-    <script src="../js/paragraphs.js"></script>
-    <script src="../js/indextypingspeed.js"></script>
+    
+    <script src="../js/country-list-weather-app.js"></script>
+    <script src="../js/indexweather.js"></script>
     <script src="../js/header.js"></script>
     <script
     src="https://form.jotform.com/static/feedback2.js"
