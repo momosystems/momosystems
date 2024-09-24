@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen!");
+console.log("JavaScript erfolgreich geladen! indexgradientgen.js");
 
 const gradientBox = document.querySelector(".gradient-box");
 const selectMenu = document.querySelector(".select-box select");

@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! htmltopdf.js");
+
 /**
  * html2pdf.js v0.9.3
  * Copyright (c) 2021 Erik Koopmans

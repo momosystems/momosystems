@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen!");
+console.log("JavaScript erfolgreich geladen! indexreaction.js");
 
 const STATES = {
     INTRO: 0,

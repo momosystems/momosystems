@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! sudoku.js");
+
 const newGrid = (size) => {
     let arr = new Array(size);
 

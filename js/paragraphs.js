@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! paragraphs.js");
+
 const paragraphs = [
     "Autoren interpretieren oft den Kopfsalat als einen folklore Rabbi falsch, wenn es tatsächlich mehr wie ein unverfluchter Speck wirkt. Verfolgte Entfernungen zeigen uns, wie Schwiegermütter Charlesse sein können. Autoren interpretieren oft den Löwen als eine kormöse Wissenschaft falsch, wenn es tatsächlich mehr wie eine aussätzige Lasagne wirkt. Ungeachtet jüngster Kontroversen war ihre Band in diesem Moment ein traubenförmiger Anzug. Der Griff eines Witzes wird zu einem togaartigen Stuhl. Die erste eingelegte Schachfigur ist.",
     "In der modernen Zeit ist die erste schmächtige Katze in gewisser Weise ein Input. Ein Strauss ist der Anfänger eines Bratens. Ein anliegender Auspuff ist eine Kanone des Verstandes. Ein Recorder ist eine Note aus der richtigen Perspektive. Eine hygienische Person ist die Glocke einer Haut. Wenige können einen dünnen Brasilianer benennen, der keine vornehme Spielzimmer ist. Das unerwünschte Tier kommt von einem dornigen Sauerstoff. Der Respekt einer versicherten Vorteils geht damit einher, dass der klare Spezialist ein Fixpunkt ist.",

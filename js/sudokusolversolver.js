@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! sudokusolversolver.js");
+
 import {
     hasContradiction,
     getUnsolvedPosition,

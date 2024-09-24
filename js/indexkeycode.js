@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexkeycode.js");
+
 const box = document.querySelector(".box");
 document.addEventListener("keydown", e => {
     if (e.keyCode == 32) {

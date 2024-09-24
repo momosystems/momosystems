@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! event.js");
+
 import { dateString, generateId, getDayIndex } from "./helper.js"
 
 export const MODE = {

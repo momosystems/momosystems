@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! helper.js");
+
 const dayInMillis = 1000 * 60 * 60 * 24;
 
 export function addDays(date, number) {

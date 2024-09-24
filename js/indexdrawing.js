@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen! Name: indexdrawing")
+console.log("JavaScript erfolgreich geladen! indexdrawing.js");
 
 const canvas = document.querySelector("canvas"),
 toolBtns = document.querySelectorAll(".tool"),

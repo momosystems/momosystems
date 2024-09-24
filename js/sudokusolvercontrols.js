@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! sudokusolvercontrols.js");
+
 import { resetArray } from "./arraymethods.js";
 import { toggleSolve } from "./sudokusolversolver.js";
 

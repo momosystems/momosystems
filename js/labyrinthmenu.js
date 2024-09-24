@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen! Name: labyrinthmenu")
+console.log("JavaScript erfolgreich geladen! labyrinthmenu.js");
 
 export const delayInput = document.getElementById("delayInput");
 export const sizeInput = document.getElementById("sizeInput");

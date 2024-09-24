@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen Name: maze");
+console.log("JavaScript erfolgreich geladen! maze.js");
 
 import { Cell } from "./labyrinthcell.js";
 import { randEl } from "./labyrinthhelper.js";

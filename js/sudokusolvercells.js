@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! sudokusolvercells.js");
+
 import { hasContradiction, array, setValue } from "./arraymethods.js";
 
 export function addBlocks() {

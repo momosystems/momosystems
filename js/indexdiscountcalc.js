@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexdiscountcalc.js");
+
 const calculate = document.querySelector('.calculate');
 const resetBtn = document.querySelector('.reset');
 

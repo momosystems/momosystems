@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen! Name: labyrinthhelper");
+console.log("JavaScript erfolgreich geladen! labyrinthhelper.js");
 
 function randInt(a, b) {
     return a + Math.floor((b - a) * Math.random());

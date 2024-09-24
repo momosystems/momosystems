@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! calendar.js");
+
 import { getDayIndex, addDays, dateString } from "./helper.js";
 import { Event, MODE } from "./event.js";
 

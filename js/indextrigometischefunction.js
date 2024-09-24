@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indextrigometischefunction.js");
+
 // setup drawing contexts
 
 const ctx1 = document.getElementById("canvas1").getContext("2d");

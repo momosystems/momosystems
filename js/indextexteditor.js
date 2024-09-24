@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indextexteditor.js");
+
 const boldBtn = document.querySelector("#bold-btn")
 const underlineBtn = document.querySelector("#underline-btn")
 const italicBtn = document.querySelector("#italic-btn")
@@ -9,6 +11,10 @@ const pdfBtn = document.querySelector("#pdf-btn")
 
 const content = document.querySelector("#content")
 const filename = document.querySelector("#filename-input")
+
+const text_area = document.querySelector('#content');
+
+filename.value = "New Document";
 
 boldBtn.addEventListener("click", () => {
     document.execCommand("bold")

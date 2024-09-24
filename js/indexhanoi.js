@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexhanoi.js");
+
 function hanoiSequence(numberDisks, origin, helper, target) {
     if(numberDisks == 0) {
         return []

@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexnotes.js");
+
 const addBox = document.querySelector(".add-box"),
 popupBox = document.querySelector(".popup-box"),
 popupTitle = popupBox.querySelector("header p"),

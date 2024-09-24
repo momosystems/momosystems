@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexworkouttracker.js");
+
 class WorkoutTracker {
 
 

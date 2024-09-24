@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen! Name: labyrinthcell");
+console.log("JavaScript erfolgreich geladen! labyrinthcell.js");
 
 export class Cell {
     constructor(pos, size) {

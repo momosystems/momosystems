@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indextts.js");
+
 const textarea = document.querySelector("textarea"),
 voiceList = document.querySelector("select"),
 speechBtn = document.querySelector("button");

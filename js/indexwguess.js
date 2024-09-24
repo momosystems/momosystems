@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexwguess.js");
+
 const inputs = document.querySelector(".inputs"),
 resetBtn = document.querySelector(".reset-btn");
 hint = document.querySelector(".hint span"),

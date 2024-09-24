@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! arraymethods.js");
+
 export let array = [];
 
 export function resetArray() {

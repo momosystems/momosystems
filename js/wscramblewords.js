@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! wscramblewords.js");
+
 let words = [
     {
         word: "addition",

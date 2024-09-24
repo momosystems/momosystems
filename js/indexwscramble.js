@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexwscramble.js");
+
 const wordText = document.querySelector(".word"),
 hintText = document.querySelector(".hint span"),
 timeText = document.querySelector(".time b"),

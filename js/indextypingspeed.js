@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indextypingspeed.js");
+
 const typingText = document.querySelector(".typing-text p"),
 inputField = document.querySelector(".wrapper .input-field"),
 timeTag = document.querySelector(".time span b"),

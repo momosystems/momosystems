@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indexpwstrength.js");
+
 const password_checker = document.querySelector('.password-checker');
 const password = document.querySelector('#password');
 const progress_bar = document.querySelector(".bar");

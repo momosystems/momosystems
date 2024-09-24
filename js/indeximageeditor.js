@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! indeximageeditor.js");
+
 const fileInput = document.querySelector(".file-input"),
 filterOptions = document.querySelectorAll(".filter button"),
 filterName = document.querySelector(".filter-info .name"),
@@ -106,7 +108,7 @@ const saveImage = () => {
     ctx.drawImage(previewImg, -canvas.width / 2, -canvas.height / 2, canvas.width, canvas.height);
     
     const link = document.createElement("a");
-    link.download = "image.jpg";
+    link.download = new Date().getTime() + "_momosystems";
     link.href = canvas.toDataURL();
     link.click();
 }

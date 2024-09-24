@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! sudokuconstant.js");
+
 const CONSTANT = {
     UNASSIGNED: 0,
     GRID_SIZE: 9,

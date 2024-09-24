@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! wguesswords.js");
+
 const wordList = [
     {
         word: "python",

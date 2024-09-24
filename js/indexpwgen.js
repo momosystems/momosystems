@@ -1,4 +1,4 @@
-console.log("Javascript erfolgreich geladen! Name: indexpwgen")
+console.log("JavaScript erfolgreich geladen! indexpwgen.js");
 
 const passwordInput = document.querySelector(".password-box input"),
 copyIcon = document.querySelector(".password-box .copy-icon"),
