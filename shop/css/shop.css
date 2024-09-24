@@ -104,6 +104,17 @@ body {
     width: 100%;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to left top, #4ad3aa, #dac8f9);
+    border-radius: 100px;
+}
+
 /* Header */
 
 #header {
