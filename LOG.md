@@ -1,4 +1,7 @@
-# Log 29.01.2024_4 (newest)
+# Log 24.09.2024_1 (newest)
+1. Alle Dateien wurden geändert
+
+# Log 29.01.2024_4
 1. Die Datei (inedx.html) wurde geändert
 
 # Log 29.01.2024_3
