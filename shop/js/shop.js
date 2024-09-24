@@ -1,3 +1,5 @@
+console.log("JavaScript erfolgreich geladen! shop.js");
+
 // Beginning of the Code
 // We, Momo Systems own the rights to this code, so it is forbidden to copy the code or claim ownership of it. Legal action will be taken in case of non-compliance. 
 
