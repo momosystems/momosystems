@@ -18,7 +18,7 @@ main {
     align-items: center;
     font: 400 1rem sans-serif;
     color: var(--text-color);
-    background-image: url('https://cdn.pixabay.com/photo/2018/08/14/13/23/ocean-3605547_1280.jpg');
+    background: linear-gradient(to left top, #1affb2, #f8db72);
     background-size: cover;
 }
 

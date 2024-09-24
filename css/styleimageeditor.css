@@ -11,7 +11,7 @@ section {
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    background: #E3F2FD;
+    background: linear-gradient(to left top, #1affb2, #f8db72);
 }
 
 .container-imgeditor {

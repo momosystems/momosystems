@@ -5,7 +5,7 @@
 section {
     background: #ece9e6;
     background: rgb(255,0,0);
-    background: linear-gradient(67deg, rgba(255,0,0,1) 0%, rgba(253,191,45,1) 100%);
+    background: linear-gradient(to left top, #1affb2, #f8db72);
     display: flex;
     align-items: center;
     justify-content: center;

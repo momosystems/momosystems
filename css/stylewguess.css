@@ -12,7 +12,7 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #1bb295;
+    background: linear-gradient(to left top, #1affb2, #f8db72);
 }
 
 .wrapper {
